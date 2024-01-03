@@ -1,0 +1,3 @@
+[submodule "submodules/DevTools"]
+	path = submodules/DevTools
+	url = https://github.com/ColinKammer/DevTools.git
