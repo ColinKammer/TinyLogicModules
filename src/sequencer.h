@@ -33,6 +33,11 @@ public:
     {
         return m_sequence[m_currentIndex];
     }
+
+    [[nodiscard]] const SequenceContainerT& GetSequence() const
+    {
+        return m_sequence;
+    }
 };
 
 }

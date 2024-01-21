@@ -31,6 +31,10 @@ namespace cjk
                 m_lastExpiration = now;
             return true;
         }
+
+        [[nodiscard]] DurationT GetPeriod() const noexcept {
+            return m_period;
+        }
     };
 
 }
