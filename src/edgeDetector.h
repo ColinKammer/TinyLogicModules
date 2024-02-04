@@ -6,7 +6,7 @@ namespace cjk
     class EdgeDetector
     {
         bool m_state;
-        bool m_initialized;
+        bool m_initialized = false;
 
     public:
         template <typename RisingFuncT, typename FallingFuncT>
