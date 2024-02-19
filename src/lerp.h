@@ -38,7 +38,7 @@ public:
     constexpr LERP(
         const Point<InT, OutT>& p1,
         const Point<InT, OutT>& p2)
-        : m_d(p2.x * p1.y / p2.y )
+        : m_d(p2.x * p1.y / p2.y)
         , m_m(p2.y / p2.x)
     {
     }
@@ -80,8 +80,8 @@ public:
         }
 
         for (size_t i = 1; i < NumPoints; i++) {
-            if (m_points[i - 1] <= x && x <= m_points[i]) {
-                LERP<InT, OutT> lerp(m_points);
+            if (m_points[i - 1].x <= x && x <= m_points[i].x) {
+                LERP<InT, OutT> lerp(m_points[i - 1], m_points[i]);
                 return lerp(x);
             }
         }
