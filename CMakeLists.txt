@@ -8,6 +8,7 @@ set(TEST_SOURCE_FILES
     test/test_clockbasedTimer.cpp
     test/test_debouncer.cpp
     test/test_edgeDetector.cpp
+    test/test_lerp.cpp
     test/test_sequenzer.cpp
 )
 
